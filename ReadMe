@@ -1,0 +1,15 @@
+My SQL commands
+
+mysql --version
+mysql -u root -p
+
+show databases;
+create database mydb;
+
+\s
+
+use mydb;
+show tables;
+desc myTable;
+
+close;
