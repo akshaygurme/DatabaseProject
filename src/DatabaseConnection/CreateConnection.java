@@ -68,9 +68,29 @@ public class CreateConnection {
 
     }
 
-    void updateData() {
+    public void updateData(Connection con) {
+        String query = "update mytable4 set tname='Akshay' where tId=3";
+
+        try {
+            Statement st = con.createStatement();
+            st.execute(query);
+            System.out.println("Table Updated Successfully");
+        }catch (Exception e)
+        {
+            System.out.println(e);
+        }
     }
 
-    void deleteData() {
+public void deleteData(Connection con) {
+
+        String query = "delete from mytable4 where tId=2";
+        try {
+            Statement st = con.createStatement();
+            st.execute(query);
+            System.out.println("Row deleted Successfully");
+        }catch (Exception e)
+        {
+            System.out.println(e);
+        }
     }
 }

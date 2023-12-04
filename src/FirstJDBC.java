@@ -13,6 +13,8 @@ public class FirstJDBC {
             Connection con = cc.connectionCreate();
 //            cc.createTable(con);
             cc.insertData(con);
+//            cc.updateData(con);
+//            cc.deleteData(con);
             cc.closeConnection(con);
 
         }catch (Exception e)
